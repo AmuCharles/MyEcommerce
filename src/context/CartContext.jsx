@@ -1,4 +1,5 @@
 import { createContext, useState, useContext } from "react";
+import PropTypes from "prop-types";  
 import { getProductById } from "../data/products";
 
 const CartContext = createContext(null);
@@ -75,10 +76,14 @@ export default function CartProvider({ children }) {
   );
 }
 
+CartProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
 export function useCart() {
   const context = useContext(CartContext);
   if (!context) {
-    throw new Error('useCart must be used within a CartProvider');
+    throw new Error("useCart must be used within a CartProvider");
   }
   return context;
 }
