@@ -59,11 +59,11 @@ body {
   transition: color 0.2s;
 }
 
-.Navbar-Link:hover {
+.Navbar-link:hover {
   color: #007bff;
 }
 
-.Navbar-auth {
+.navbar-auth {
   display: flex;
   align-items: center;
   gap: 1rem;
