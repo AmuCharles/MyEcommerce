@@ -20,15 +20,30 @@ body {
 }
 
 .Navbar {
+  position:sticky;
+  top:0;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 1rem 0;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
+}
+
+.Navbar a,
+.Navbar button,
+.navbar-auth a,
+.navbar-auth button,
+.Navbar-link,
+.btn {
+  pointer-events: auto !important;
+  position: relative;
+  z-index: 1000;
 }
 
 .Navbar-container {
+  position:relative;
+  z-index: 1;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
@@ -86,6 +101,8 @@ body {
 }
 
 .page {
+  position: relative;
+  z-index:1;
   flex: 1;
   padding: 2rem 0;
 }
