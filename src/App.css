@@ -71,18 +71,18 @@ body {
   gap: 1rem;
 }
 
-.Navbar-user {
+.navbar-user {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.Navbar-greeting {
+.navbar-greeting {
   color: #666;
   font-size: 0.9rem;
 }
 
-.Navbar-auth-links {
+.navbar-auth-links {
   display: flex;
   gap: 0.5rem;
 }

@@ -7,7 +7,7 @@ export default function Home(){
         <div className ="page">
             <div className="home-hero">
                 <h1 className="home-title">Welcome to ChaseHUB</h1>
-                <p className ="home-shuttle">Discover amazing products at great prices</p>
+                <p className ="home-subtitle">Discover amazing products at great prices</p>
             </div>
 
             <div className ="container">
@@ -21,6 +21,6 @@ export default function Home(){
             </div>
             
         </div>
-    )
+            )
 }
         

@@ -4,9 +4,11 @@ import Auth from './pages/Auth';
 import Checkout from './pages/CheckoutPage';
 import Navbar from './components/Navbar';
 import './App.css';
+import  AuthProvider  from './context/Authcontext';
 
 function App() {
  return ( 
+  <AuthProvider>
  <div className="app">
   <Navbar />
 
@@ -16,6 +18,7 @@ function App() {
     <Route path="/checkout" element={<Checkout />} />
   </Routes>
   </div>
+  </AuthProvider>
  );
 }
 
