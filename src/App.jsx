@@ -4,7 +4,7 @@ import Auth from './pages/Auth';
 import Checkout from './pages/CheckoutPage';
 import Navbar from './components/Navbar';
 import './App.css';
-import AuthProvider from './context/Authcontext';
+import AuthProvider from './context/AuthContext';
 import CartProvider from './context/CartContext';   // ✅ 
 import ProductDetails from './pages/ProductsDetails';
 
